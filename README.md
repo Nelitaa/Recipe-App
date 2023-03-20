@@ -177,7 +177,7 @@ I would like to thank everyone who contributed to this project
 
 - **Do i need internet**
 
-  - yes. it requires internet to send confirmation emails
+  - yes. it requires internet to download some files during installation.
 
 - **Do I need Node**
 
