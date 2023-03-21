@@ -36,10 +36,7 @@
     <%= form.check_box :public %>
   </div>
 
-  <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
-  </div>
+    <%= form.hidden_field :user_id, value:  current_user.id %>
 
   <div class="button-form">
       <%= form.submit %>
