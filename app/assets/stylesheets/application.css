@@ -70,7 +70,6 @@ button {
   box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
   padding: 10px;
   cursor: pointer;
-  margin-bottom: 5%;
 }
 
 form {
@@ -98,58 +97,6 @@ form textarea {
   flex-direction: column;
   justify-content: center;
   padding: 5%;
-  width: 50vw;
-  background-color: #7d87a9;
-  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-  margin-bottom: 5%;
-}
-
-.information-box p {
-  color: #fff;
-}
-
-.information-box p strong {
-  color: #90caca;
-}
-
-h2,
-.light-color-text a {
-  color: #90caca;
-}
-
-.recipe {
-  display: flex;
-  flex-direction: row;
-  column-gap: 15%;
-}
-
-.recipe-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 20%;
-}
-
-.new-food-button {
-  display: flex;
-  flex-direction: column;
-  align-self: end;
-}
-
-thead {
-  color: #90caca;
-  width: 100%;
-}
-
-td,
-th {
-  width: 200px;
-}
-
-tbody {
-  color: #fff;
-  text-align: center;
   background-color: #7d87a9;
   box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
