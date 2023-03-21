@@ -1,27 +1,17 @@
-<div id="<%= dom_id food %>">
-  <p>
-    <strong>Name:</strong>
+<tr id="<%= dom_id food %>">
+  <td>
     <%= food.name %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Measurement unit:</strong>
+  <td>
     <%= food.measurement_unit %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Price:</strong>
+  <td>
     <%= food.price %>
-  </p>
+  </td>
 
-  <p>
-    <strong>Quantity:</strong>
-    <%= food.quantity %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= food.user.name %>
-  </p>
-
-</div>
+  <td>
+    <button class="button-form"  data-confirm="Are you sure?" data-method="delete" onclick="window.location.href='/foods/<%= food.id %>'">Delete</button>
+  </td>
+</tr>
