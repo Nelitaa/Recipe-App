@@ -7,7 +7,14 @@ class RecipesController < ApplicationController
   end
 
   # GET /recipes/1 or /recipes/1.json
-  def show; end
+  def show
+    @foods = Food.all || []
+  end
+
+  def public_recipes
+    @recipes = Recipe.where(public: true)
+    render :index
+  end
 
   # GET /recipes/new
   def new
