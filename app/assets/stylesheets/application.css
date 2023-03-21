@@ -27,3 +27,62 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #7d87a9;
+  text-shadow: 10px 10px 14px rgba(0, 0, 0, 0.47);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.button-form input,
+button {
+  border: none;
+  background-color: #90caca;
+  color: #fff;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  padding: 10px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  background-color: #7d87a9;
+  color: #fff;
+  margin-top: 3%;
+  padding: 5%;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+form input {
+  margin: 2%;
+  padding: 2%;
+}
+
+form textarea {
+  width: 100%;
+}
+
+.information-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  background-color: #7d87a9;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+.light-color-text a {
+  color: #90caca;
+}
