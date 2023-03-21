@@ -3,8 +3,35 @@
 <%= render @recipe %>
 
 <div>
+  <a href="/general_shoping_list">
+    <button>
+      Generate shopping list
+    </button>
+  </a>
+  <button>
+    Add ingredient
+  </button>
+</div> 
+<br />
+<hr />
+
+<div id="foods">
+  <% @foods.each do |food| %>
+    <%= render food %>
+    <div>
+      <%= link_to "Modify", edit_food_path(food) %> |
+      <%= button_to "Remove", food, method: :delete %>
+    </div>
+  <% end %>
+</div>
+
+
+<br />
+<!--
+<div>
   <%= link_to "Edit this recipe", edit_recipe_path(@recipe) %> |
   <%= link_to "Back to recipes", recipes_path %>
 
   <%= button_to "Destroy this recipe", @recipe, method: :delete %>
 </div>
+-->

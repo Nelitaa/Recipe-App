@@ -9,6 +9,13 @@ class FoodsController < ApplicationController
   # GET /foods/1 or /foods/1.json
   def show; end
 
+  # GET /foods/1 or /foods/1.json
+  def general_shoping_list
+    @foods = Food.all
+    @food_items = @foods.length
+    @price_sum = Food.sum(:price)
+  end
+
   # GET /foods/new
   def new
     @food = Food.new
