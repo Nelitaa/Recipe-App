@@ -1,11 +1,9 @@
-<section>
-  <h1>New food</h1>
+<h1>New food</h1>
 
-  <%= render "form", food: @food %>
+<%= render "form", food: @food %>
 
-  <br>
+<br>
 
-  <div class="light-color-text">
-    <%= link_to "Back to foods", foods_path %>
-  </div>
-</section>
+<div>
+  <%= link_to "Back to foods", foods_path %>
+</div>
