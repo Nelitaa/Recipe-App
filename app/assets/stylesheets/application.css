@@ -28,6 +28,24 @@ a {
   color: #fff;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #7d87a9;
+  padding: 1%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20% 0 20%;
+}
+
+nav ul li {
+  padding: 1%;
+}
+
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -83,6 +101,7 @@ form textarea {
   box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 
+nav ul li a:hover,
 .light-color-text a {
   color: #90caca;
 }
