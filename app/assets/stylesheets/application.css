@@ -28,6 +28,24 @@ a {
   color: #fff;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #7d87a9;
+  padding: 1%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20% 0 20%;
+}
+
+nav ul li {
+  padding: 1%;
+}
+
 h1 {
   font-size: 2em;
   font-weight: bold;
@@ -66,7 +84,7 @@ form {
   box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
 
-.button-form  input {
+.button-form input {
   margin: 2%;
   padding: 2%;
 }
@@ -132,4 +150,11 @@ th {
 tbody {
   color: #fff;
   text-align: center;
+  background-color: #7d87a9;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+.light-color-text a,
+nav ul li a:hover {
+  color: #90caca;
 }
