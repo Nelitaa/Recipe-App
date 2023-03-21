@@ -13,7 +13,7 @@ class RecipesController < ApplicationController
 
   def public_recipes
     @recipes = Recipe.where(public: true)
-    render :index
+    render :public_recipes_list
   end
 
   # GET /recipes/new

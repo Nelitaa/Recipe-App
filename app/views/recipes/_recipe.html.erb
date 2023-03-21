@@ -1,37 +1,15 @@
 <div id="<%= dom_id recipe %>" class="information-box recipe">
   <div class="recipe-title">
-    <h2><%= link_to "Recipe ##{recipe.id}", recipe %></h2>
-    <button class="button-form" onclick="window.location.href='/recipes/<%= recipe.id %>'" data-method="delete" data-confirm="Are you sure?">Remove</button> 
+    <h2><%= link_to "Recipe ##{recipe.id}", recipe %></h2> 
+    <br />
+    <%= button_to "Remove", recipe, method: :delete, class: "button-form" %>
   </div>
   <div>
-    <p>
-      <strong>Name:</strong>
-      <%= recipe.name %>
-    </p>
-
-    <p>
-      <strong>Preparation unit:</strong>
-      <%= recipe.preparation_unit %>
-    </p>
-
-    <p>
-      <strong>Cooking time:</strong>
-      <%= recipe.cooking_time %>
-    </p>
-
-    <p>
-      <strong>Description:</strong>
+    <h3 style="color: #fff;">
+      Description of the recipe
+    </h3> <br />
+    <p style="font-size: 19px;">
       <%= recipe.description %>
-    </p>
-
-    <p>
-      <strong>Public:</strong>
-      <%= recipe.public %>
-    </p>
-
-    <p>
-      <strong>User:</strong>
-      <%= recipe.user.name %>
     </p>
   </div>
 </div>
