@@ -167,7 +167,7 @@ If you like this project please support us by adding a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank everyone who contributed to this project
+We would like to thank everyone who contributed to this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
