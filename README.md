@@ -1,4 +1,4 @@
-# 📖<a name="about-project">RECIPE APP/a>
+# 📖<a name="about-project">RECIPE APP</a>
 
 <!-- TABLE OF CONTENTS -->
 
