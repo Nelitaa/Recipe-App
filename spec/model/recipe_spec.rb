@@ -23,6 +23,10 @@ RSpec.describe Recipe, type: :model do
     expect(subject.preparation_unit).to be_a(String)
   end
 
+  it 'Preparation unit to be kg' do
+    expect(subject.preparation_unit).to eql('kg')
+  end
+
   it 'Cooking time to be 10' do
     expect(subject.cooking_time).to eql(3)
   end
