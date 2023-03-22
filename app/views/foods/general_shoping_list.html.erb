@@ -1,25 +1,34 @@
+<br />
 <h1>Shopping List</h1>
-<div>
-  <span>Amount of food items to buy: <%= @food_items %> </span>
-  <span>Total value of food needed: $<%= @price_sum %> </span>
-</div>
-
-<h4>Foods</h4>
-<div id="foods">
-  <% @foods.each do |food| %>
-    <div id="<%= dom_id food %>">
-      <span>
-        <strong>Name:</strong>
-        <%= food.name %>
-      </span> | 
-      <span>
-        <strong>Quantity:</strong>
-        <%= food.quantity %>
-      </span> | 
-      <span>
-        <strong>Price:</strong>
-        <%= food.price %>
-      </span>
-    </div>
-  <% end %>
-</div>
+<center>
+  <div class="section-title">
+    <span>Amount of food items to buy: <%= @food_items %> </span>
+    <span>Total value of food needed: $<%= @price_sum %> </span>
+  </div>
+</center>
+<section>
+  <table id="foods" class="information-box">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @foods.each do |food| %>
+        <tr class="tr-padding">
+          <td>
+            <%= food.name %>
+          </td>
+          <td>
+            <%= food.quantity %>
+          </td>
+          <td>
+            <%= food.price %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

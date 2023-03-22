@@ -12,8 +12,9 @@
 
   <body>
     <%= render partial: "shared/header" %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <center>
+      <p class="alert" style="color: green"><%= alert %></p>
+    </center>
     <%= yield %>
   </body>
 </html>
