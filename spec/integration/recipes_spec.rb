@@ -4,8 +4,10 @@ RSpec.describe 'Recipes', type: :feature do
   describe 'Index' do
     before(:each) do
       @user = User.create!(name: 'Test User', email: 'test@gmail.com', password: '123456')
-      @recipe = Recipe.create!(name: 'Test Recipe', preparation_unit: 1, cooking_time: 1, description: 'Test Description', public: true, user_id: @user.id)
-      @recipe2 = Recipe.create!(name: 'Test Recipe 2', preparation_unit: 1, cooking_time: 1, description: 'Test Description 2', public: true, user_id: @user.id)
+      @recipe = Recipe.create!(name: 'Test Recipe', preparation_unit: 1, cooking_time: 1,
+                               description: 'Test Description', public: true, user_id: @user.id)
+      @recipe2 = Recipe.create!(name: 'Test Recipe 2', preparation_unit: 1, cooking_time: 1,
+                                description: 'Test Description 2', public: true, user_id: @user.id)
       @user.skip_confirmation!
       @user.save!
       visit new_user_session_path
@@ -36,8 +38,10 @@ RSpec.describe 'Recipes', type: :feature do
   describe 'New' do
     before(:each) do
       @user = User.create!(name: 'Test User', email: 'test@gmail.com', password: '123456')
-      @recipe = Recipe.create!(name: 'Test Recipe', preparation_unit: 1, cooking_time: 1, description: 'Test Description', public: true, user_id: @user.id)
-      @recipe2 = Recipe.create!(name: 'Test Recipe 2', preparation_unit: 1, cooking_time: 1, description: 'Test Description 2', public: true, user_id: @user.id)
+      @recipe = Recipe.create!(name: 'Test Recipe', preparation_unit: 1, cooking_time: 1,
+                               description: 'Test Description', public: true, user_id: @user.id)
+      @recipe2 = Recipe.create!(name: 'Test Recipe 2', preparation_unit: 1, cooking_time: 1,
+                                description: 'Test Description 2', public: true, user_id: @user.id)
       @user.skip_confirmation!
       @user.save!
       visit new_user_session_path
@@ -92,8 +96,10 @@ RSpec.describe 'Recipes', type: :feature do
   describe 'Show' do
     before(:each) do
       @user = User.create!(name: 'Test User', email: 'test@gmail.com', password: '123456')
-      @recipe = Recipe.create!(name: 'Test Recipe', preparation_unit: 1, cooking_time: 1, description: 'Test Description', public: true, user_id: @user.id)
-      @recipe2 = Recipe.create!(name: 'Test Recipe 2', preparation_unit: 1, cooking_time: 1, description: 'Test Description 2', public: true, user_id: @user.id)
+      @recipe = Recipe.create!(name: 'Test Recipe', preparation_unit: 1, cooking_time: 1,
+                               description: 'Test Description', public: true, user_id: @user.id)
+      @recipe2 = Recipe.create!(name: 'Test Recipe 2', preparation_unit: 1, cooking_time: 1,
+                                description: 'Test Description 2', public: true, user_id: @user.id)
       @user.skip_confirmation!
       @user.save!
       visit new_user_session_path
