@@ -3,16 +3,16 @@ class RecipesController < ApplicationController
 
   # GET /recipes or /recipes.json
   def index
-    @recipes = Recipe.all
+    @recipes = Recipe.includes(:user).all
   end
 
   # GET /recipes/1 or /recipes/1.json
   def show
-    @foods = Food.all || []
+    @foods = Food.all
   end
 
   def public_recipes
-    @recipes = Recipe.where(public: true)
+    @recipes = Recipe.includes(recipe_foods: :food).where(public: true)
     render :public_recipes_list
   end
 
