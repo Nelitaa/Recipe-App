@@ -129,7 +129,7 @@ To test the project, execute the following command:
 - Twitter: [@MarianelaMunoz](https://twitter.com/MarianelaMunoz_)
 - LinkedIn: [Marianela-munoz](https://www.linkedin.com/in/marianela-munoz/)
 
-👤 **Marianela Muñoz Gutierrez**
+👤 **Emmanuel Mhango**
 
 - GitHub: [@emmanuellmhango](https://github.com/emmanuellmhango)
 - LinkedIn: [@emmanuellmhango](https://www.linkedin.com/in/emmanuellmhango)
