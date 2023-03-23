@@ -1,0 +1,22 @@
+<center><p style="color: green"><%= notice %></p></center>
+<section>
+  <h1>Foods</h1>
+  <button type="button" class="new-food-button align-near">
+    <%= link_to "Add food", new_food_path %>
+  </button>
+  <table id="foods" class="information-box">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Measurement unit</th>
+        <th>Unit Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @foods.each do |food| %>
+        <%= render food %>
+      <% end %>
+    </tbody>
+  </table>
+</section>

@@ -1,0 +1,34 @@
+<br />
+<h1>Shopping List</h1>
+<center>
+  <div class="section-title">
+    <span>Amount of food items to buy: <%= @food_items %> </span>
+    <span>Total value of food needed: $<%= @price_sum %> </span>
+  </div>
+</center>
+<section>
+  <table id="foods" class="information-box">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @foods.each do |food| %>
+        <tr class="tr-padding">
+          <td>
+            <%= food.name %>
+          </td>
+          <td>
+            <%= food.quantity %>
+          </td>
+          <td>
+            <%= food.price %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

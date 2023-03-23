@@ -1,0 +1,25 @@
+<header>
+  <h1><a href="/">RECIPE APP</a></h1>
+  <br />
+  <nav>
+    <ul>
+      <li>
+        <a href="/">Foods</a>
+      </li>
+      <li>
+        <a href="/recipes">Recipes</a>
+      </li>
+      <li>
+        <a href="/public_recipes">Public Recipe List</a>
+      </li>
+      <li>
+        <a href="/general_shoping_list">Shopping List</a>
+      </li>
+      <% if user_signed_in? %>
+        <li>
+          <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</header>

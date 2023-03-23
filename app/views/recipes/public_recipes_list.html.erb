@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<section>
+  <h1>Public Recipes</h1>
+  <br>
+  <div id="recipes">
+    <% @recipes.each do |recipe| %>
+      <%= render recipe %>
+    <% end %>
+  </div>
+  <br>
+</section>

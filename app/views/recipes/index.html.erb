@@ -1,0 +1,15 @@
+<section>
+  <% if notice %>
+    <h4 style="color: green"> <%= notice %> </h4>
+  <% end %>
+  <h1>Recipes</h1>
+  <br>
+  <button type="button" class="new-food-button align-near">
+    <%= link_to "New recipe", new_recipe_path %>
+  </button>
+  <div id="recipes">
+    <% @recipes.each do |recipe| %>
+      <%= render recipe %>
+    <% end %>
+  </div>
+</section>

@@ -1,0 +1,245 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: #7d87a9;
+  padding: 1%;
+}
+
+.bgcolor {
+  background-color: #7d87a9;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20% 0 20%;
+}
+
+nav ul li {
+  padding: 1%;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: #7d87a9;
+  text-shadow: 10px 10px 14px rgba(0, 0, 0, 0.47);
+}
+
+.recipe-show {
+  text-align: left;
+  height: 35px;
+  font-size: 20px;
+}
+
+.align-near {
+  margin-right: 20%;
+}
+
+.section-title {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  width: 40%;
+  background-color: #7d87a9;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tr-padding {
+  height: 35px;
+}
+
+.width {
+  width: 60%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 5%;
+}
+
+.button-form input,
+button {
+  border: none;
+  background-color: #90caca;
+  color: #fff;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  background-color: #7d87a9;
+  color: #fff;
+  margin-top: 3%;
+  padding: 5%;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+.button-form input {
+  margin: 2%;
+  padding: 2%;
+}
+
+form textarea {
+  width: 100%;
+}
+
+.information-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  width: 50vw;
+  background-color: #7d87a9;
+  box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+  margin-bottom: 5%;
+}
+
+.information-box p {
+  color: #fff;
+}
+
+.information-box p strong {
+  color: #90caca;
+}
+
+h2,
+.light-color-text a {
+  color: #90caca;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15%;
+}
+
+.recipe-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20%;
+}
+
+.new-food-button {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+
+thead {
+  color: #90caca;
+  width: 100%;
+}
+
+td,
+th {
+  width: 200px;
+}
+
+tbody {
+  color: #fff;
+  text-align: center;
+  background-color: #7d87a9;
+  padding-top: 3%;
+}
+
+.light-color-text a,
+nav ul li a:hover {
+  color: #90caca;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

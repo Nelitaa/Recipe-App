@@ -1,0 +1,83 @@
+<section>
+  <% if notice %>
+    <h4 style="color: green"> <%= notice %> </h4>
+  <% end %>
+  <h1> Recipe <%= @recipe.id %> </h1>
+  <br />
+  <table width="48%" class="bgcolor">
+    <tr class="recipe-show">
+      <td>&nbsp;&nbsp;&nbsp; Preparation Time: <%= @recipe.preparation_unit %> hrs</td>
+      <td align="right" style="margin-top: 10px"> 
+        Public
+        <label class="switch">
+          <% if @recipe.public %>
+            <%= check_box_tag 'public', 1, true %>
+          <% else %>
+            <%= check_box_tag 'public', 1, false %>
+          <% end %>
+          <span class="slider"></span>
+        </label> &nbsp;&nbsp;&nbsp;&nbsp;
+      </td>
+      </tr>
+    <tr class="recipe-show"><td colspan="2">&nbsp;&nbsp;&nbsp; Cooking Time: <%= @recipe.cooking_time %> hrs</td></tr>
+    <tr class="recipe-show"><td colspan="2">&nbsp;&nbsp;&nbsp; Steps go here...</td></tr>
+  </table>
+</section>
+<center>
+  <div class="section-title">
+    <a href="/general_shoping_list">
+      <button> Generate shopping list </button>
+    </a>
+    <button> Add ingredient </button>
+  </div>
+  <br />
+  <hr class="width"/>
+  <br />
+</center>
+
+<section>
+  <table id="foods" class="information-box">
+    <thead>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @foods.each do |food| %>
+        <tr id="<%= dom_id food %>" class="tr-padding">
+          <td>
+            <%= food.name %>
+          </td>
+          <td>
+            <%= food.quantity %>
+          </td>
+          <td>
+            <%= food.price %>
+          </td>
+          <td>
+            <div class="actions">
+              <%= link_to "Modify", edit_food_path(food) %> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+              <%= link_to "Remove", food, method: :delete %>
+            </div>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
+<section>
+
+<br />
+<!--
+<div>
+  <%= link_to "Edit this recipe", edit_recipe_path(@recipe) %> |
+  <%= link_to "Back to recipes", recipes_path %>
+
+  
+</div>
+-->
+</section>
+
