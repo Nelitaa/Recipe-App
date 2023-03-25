@@ -14,6 +14,8 @@ gem 'sprockets-rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 
+gem 'pg', '~> 1.4', '>= 1.4.6'
+
 # Rubocop installation
 gem 'rubocop', '>= 1.0', '< 2.0'
 
