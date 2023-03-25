@@ -5,7 +5,8 @@
 #   gem "sqlite3"
 #
 default: &default
-  adapter: sqlite3
+  # adapter: sqlite3
+  adapter: postgres
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
@@ -22,4 +23,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  url: <%= ENV['DATABASE_URL'] %>
+  database: recipe_app_production
+  username: recipe_app
+  password: <%= ENV['RENDER_DEPLOY_DATABASE_PASSWORD'] %>
