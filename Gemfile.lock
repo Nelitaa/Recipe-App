@@ -139,10 +139,13 @@ GEM
       racc (~> 1.4)
     nokogiri (1.14.2-x64-mingw-ucrt)
       racc (~> 1.4)
+    nokogiri (1.14.2-x86_64-linux)
+      racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
     parser (3.2.1.1)
       ast (~> 2.4.1)
+    pg (1.4.6)
     pg (1.4.6-x64-mingw-ucrt)
     public_suffix (5.0.1)
     puma (5.6.5)
@@ -230,6 +233,7 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.6.1-arm64-darwin)
     sqlite3 (1.6.1-x64-mingw-ucrt)
+    sqlite3 (1.6.1-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.1)
@@ -265,6 +269,7 @@ GEM
 PLATFORMS
   arm64-darwin-22
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
