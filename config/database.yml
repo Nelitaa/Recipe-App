@@ -24,6 +24,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: recipe_app_production
+  database: recipe_app_production_s52a
   username: recipe_app
   password: <%= ENV['RENDER_DEPLOY_DATABASE_PASSWORD'] %>
