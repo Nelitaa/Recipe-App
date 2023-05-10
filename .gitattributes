@@ -5,3 +5,10 @@ db/schema.rb linguist-generated
 
 # Mark any vendored files as having been vendored.
 vendor/* linguist-vendored
+
+*.rb linguist-language=Ruby
+*.erb linguist-language=HTML+ERB
+*.rake linguist-language=Ruby
+Gemfile linguist-language=Ruby
+Gemfile.lock linguist-language=Ruby
+config.ru linguist-language=Ruby
