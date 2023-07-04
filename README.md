@@ -63,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Comming Soon
+[Live Demo](https://recipe-app-tqr7.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
